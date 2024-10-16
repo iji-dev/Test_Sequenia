@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_preview">Превью</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+    <string name="error_internet_connection">Ошибка интернет соединения</string>
+    <string name="empty">Пусто</string>
+    <string name="movies">Фильмы</string>
+    <string name="kinopoisk">КиноПоиск</string>
+    <string name="genres">Жанры</string>
+    <string name="repeat">ПОВТОРИТЬ</string>
+    <string name="year">год</string>
+</resources>

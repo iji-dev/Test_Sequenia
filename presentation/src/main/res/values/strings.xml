@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">Test_Sequenia</string>
+    <string name="movie_preview">Preview</string>
+    <string name="movies">Movies</string>
+    <string name="genres">Genres</string>
+    <string name="year">year</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="error_internet_connection">Something is wrong with the internet</string>
+    <string name="empty">Empty</string>
+    <string name="kinopoisk">KinoPoisk</string>
+    <string name="repeat">REPEAT</string>
+    <string name="unknown_rating"
+        translatable="false">0.0</string>
+</resources>

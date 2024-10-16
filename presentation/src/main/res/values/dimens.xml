@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="card_size_250">250dp</dimen>
+    <dimen name="width_card_size_176">176dp</dimen>
+    <dimen name="height_card_size_268">268dp</dimen>
+    <dimen name="corner_4">4dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_48">48sp</dimen>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/spacing_16"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/movie_card"
+                android:layout_width="@dimen/width_card_size_176"
+                android:layout_height="@dimen/height_card_size_268"
+                android:layout_margin="@dimen/spacing_24"
+                app:cardBackgroundColor="#f0f0f0"
+                app:cardCornerRadius="@dimen/corner_4"
+                app:layout_constraintBottom_toTopOf="@id/movie_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="0dp"
+                >
+
+                <ImageView
+                    android:id="@+id/movie_preview_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/movie_preview"
+                    android:scaleType="center"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="@dimen/text_size_35"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/movie_genre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/movie_card"
+                />
+
+            <TextView
+                android:id="@+id/movie_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:gravity="start"
+                android:textSize="@dimen/text_size_19"
+                app:layout_constraintBottom_toTopOf="@id/movie_rating"
+                app:layout_constraintEnd_toStartOf="@id/movie_year"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/movie_title"
+                />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacing_12"
+                android:gravity="start"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_19"
+                app:layout_constraintBottom_toBottomOf="@id/movie_genre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/movie_genre"
+                app:layout_constraintTop_toTopOf="@id/movie_genre"
+                />
+
+            <TextView
+                android:id="@+id/movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="@dimen/spacing_8"
+                android:singleLine="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/text_size_28"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/movie_description"
+                app:layout_constraintEnd_toStartOf="@id/movie_db"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/movie_genre"
+                />
+
+            <TextView
+                android:id="@+id/movie_db"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/kinopoisk"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/text_size_21"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/movie_rating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/movie_rating"
+                app:layout_constraintTop_toTopOf="@id/movie_rating"
+                />
+
+            <TextView
+                android:id="@+id/movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:lineSpacingExtra="@dimen/spacing_6"
+                android:textSize="@dimen/text_size_19"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/movie_rating"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
